@@ -10,12 +10,12 @@
         </tr>
       </thead>
       <tbody>
-    <tr v-for="(item, index) in movies" :key= "index">
-      <th>{{item._id}}</th>
-      <td>{{item.title}}</td>
-      <td>{{item.year}}</td>
-      <td>{{item.description}}</td>
-    </tr>
+        <tr v-for="(item, index) in movies" :key="index">
+          <th>{{ item._id }}</th>
+          <td>{{ item.title }}</td>
+          <td>{{ item.year }}</td>
+          <td>{{ item.description }}</td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -23,27 +23,29 @@
 
 
 <script>
-
-import axios from "axios"
+import axios from "axios";
 
 export default {
-  data(){
-    return{
-      movies: []
-    }
-  }, 
-  created(){
-    this.listarMovies()
+  data() {
+    return {
+      movies: [],
+    };
+  },
+  created() {
+    this.listarMovies();
   },
   methods: {
-    listarMovies(){
-      this.axios.get("movies").then((response) => {
-        console.log(response.data);
-        // this.movies = response.data
-      }).catch((e) => {
-        console.log("Error " + e);
-      })
-    }
-  }
-}
+    listarMovies() {
+      this.axios
+        .get("movies")
+        .then((response) => {
+          console.log(response.data.movies);
+          // this.movies = response.data;
+        })
+        .catch((e) => {
+          console.log("Error " + e);
+        });
+    },
+  },
+};
 </script>
