@@ -1,17 +1,17 @@
 <template>
   <div class="about">
-    <table>
+    <table class="table">
       <thead>
         <tr>
-          <th>#</th>
-          <th>title</th>
-          <th>year</th>
-          <th>description</th>
+          <th scope="col">#</th>
+          <th scope="col">title</th>
+          <th scope="col">year</th>
+          <th scope="col">description</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="(item, index) in movies" :key="index">
-          <th>{{ item._id }}</th>
+          <th scope="row">{{ item._id }}</th>
           <td>{{ item.title }}</td>
           <td>{{ item.year }}</td>
           <td>{{ item.description }}</td>
@@ -40,7 +40,7 @@ export default {
         .get("movies")
         .then((response) => {
           console.log(response.data.movies);
-          // this.movies = response.data;
+          this.movies = response.data;
         })
         .catch((e) => {
           console.log("Error " + e);
