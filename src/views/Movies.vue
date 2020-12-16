@@ -3,7 +3,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">i#</th>
+          <th scope="col">#</th>
           <th scope="col">title</th>
           <th scope="col">year</th>
           <th scope="col">description</th>
@@ -17,7 +17,6 @@
           <td>{{ item.year }}</td>
           <td>{{ item.description }}</td>
           <td>{{ item.genre }}</td>
-          <td>{{ movies }}</td>
         </tr>
       </tbody>
     </table>
