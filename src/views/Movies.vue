@@ -3,10 +3,11 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
+          <th scope="col">i#</th>
           <th scope="col">title</th>
           <th scope="col">year</th>
           <th scope="col">description</th>
+          <th scope="col">genre</th>
         </tr>
       </thead>
       <tbody>
@@ -15,12 +16,13 @@
           <td>{{ item.title }}</td>
           <td>{{ item.year }}</td>
           <td>{{ item.description }}</td>
+          <td>{{ item.genre }}</td>
+          <td>{{ movies }}</td>
         </tr>
       </tbody>
     </table>
   </div>
 </template>
-
 
 <script>
 import axios from "axios";
