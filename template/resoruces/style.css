@@ -1,0 +1,156 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #a6a6a6;
+}
+
+.container {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* Layout */
+.pokedex-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 1fr;
+  height: 100%;
+  background: #595959;
+  border-radius: 10px;
+}
+
+header {
+  grid-area: header;
+  background: #000;
+  border-radius: 10px 10px 0 0;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+header a {
+  color: #f2f2f2;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pokedex-logo > img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+.row-center {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin: auto;
+}
+
+.card {
+  width: 220px;
+  height: 40px;
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.poke-name > img {
+  width: 20px;
+  height: 20px;
+}
+
+.poke-name > span {
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.pokemon-sprite{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.pokemon-sprite > img {
+  width: 287px;
+  height: 258px;
+}
+
+.pokemon-info {
+  width: 220px;
+  height: 257px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 145px 0px 10px 50px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #fff;
+  height: 100px;
+  border-radius: 0 0 10px 10px;
+}
+
+@media only screen and (min-width: 400px) {
+  body {
+    background: #f00;
+  }
+  header {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pokedex-logo > img {
+    padding: 10px;
+  }
+
+  .pokemon-sprite > img {
+    width: 287px;
+    height: 257px;
+  }
+
+  .row-center {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: #fff;
+    height: 82px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/* footer {
+  grid-area: footer;
+  background-color: #fff;
+  height: 82px;
+  border-radius: 0 0 10px 10px;
+} */
+
