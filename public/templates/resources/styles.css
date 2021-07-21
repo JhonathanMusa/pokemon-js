@@ -11,8 +11,12 @@ body {
   background: #a6a6a6;
 }
 
+/* span {
+  font-size: 18px;
+} */
+
 .container {
-  height: 100%;
+  height: 90%;
   width: 90%;
   margin: auto;
   padding-top: 20px;
@@ -101,7 +105,7 @@ header a {
   z-index: 999;
 }
 
-.pokemon-info {
+.data-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -109,25 +113,14 @@ header a {
   height: 257px;
   background-color: #fff;
   border-radius: 10px;
-}
-
-.data-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   text-align: center;
   margin-left: 40px;
+  padding: 20px 0 20px 0;
 }
 
-.data-info > div {
+.data-info > div > span {
   padding: 5px;
   font-weight: bold;
-}
-.data-value {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  margin-left: 20px;
 }
 
 .data-value > span {
@@ -183,7 +176,7 @@ footer {
   }
 
   .pokedex-container {
-    height: 95%;
+    height: 80vh;
   }
 
   header {
@@ -201,14 +194,19 @@ footer {
     height: 168px;
   }
 
-  .pokemon-info {
-    width: 240px;
-    height: 237px;
-    background-color: #fff;
-    border-radius: 10px;
+  .data-info {
+    grid-template-columns: repeat(2, 1fr);
     margin: auto;
     position: relative;
     top: 90px;
+    padding: 40px 0 0 20px;
+    text-align: left;
+    font-size: 14px;
+    column-gap: 20px;
+  }
+
+  .data-text {
+    margin: 20px;
   }
 
   footer {
@@ -227,7 +225,7 @@ footer {
     background-color: #f00;
   }
   .pokedex-container {
-    height: 95%;
+    height: 90vh;
   }
 
   header {
@@ -238,7 +236,7 @@ footer {
   .row-center {
     display: flex;
     flex-direction: row;
-    margin: 100px 0px 20px 70px;
+    margin: 100px 0px;
   }
 
   .card {
@@ -247,23 +245,24 @@ footer {
   }
 
   .pokemon-sprite > img {
-    width: 287px;
-    height: 300px;
+    width: 300px;
+    height: 340px;
   }
 
-  .pokemon-info {
+  .data-info {
     width: 240px;
     height: 257px;
     background-color: #fff;
     border-radius: 10px;
     position: initial;
+    column-gap: 20px;
   }
 
-  .data-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    margin-left: 40px;
+  .data-text {
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 10px;
+    color: #a6a6a6;
   }
 
   footer {
@@ -291,7 +290,7 @@ footer {
     background-color: green;
   }
   .pokedex-container {
-    height: 95%;
+    height: 90vh;
   }
 
   header {
@@ -305,16 +304,8 @@ footer {
   }
 
   .pokemon-sprite > img {
-    width: 287px;
-    height: 300px;
-  }
-
-  .pokemon-info {
-    width: 240px;
-    height: 257px;
-    background-color: #fff;
-    border-radius: 10px;
-    top: 90px;
+    width: 300px;
+    height: 340px;
   }
 
   footer {
