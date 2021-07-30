@@ -164,6 +164,11 @@ footer {
   cursor: pointer;
 }
 
+.card-link > img {
+  width: 42px;
+  height: 42px;
+}
+
 .card1 > img {
   width: 42px;
   height: 42px;
@@ -172,7 +177,6 @@ footer {
 @media (min-width: 320px) {
   body {
     height: 80vh;
-    background-color: blue;
   }
 
   .pokedex-container {
@@ -222,7 +226,6 @@ footer {
 @media (min-width: 700px) {
   body {
     height: 90vh;
-    background-color: #f00;
   }
   .pokedex-container {
     height: 90vh;
@@ -287,7 +290,6 @@ footer {
 @media (min-width: 900px) {
   body {
     height: 90vh;
-    background-color: green;
   }
   .pokedex-container {
     height: 90vh;
